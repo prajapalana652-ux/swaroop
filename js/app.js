@@ -825,8 +825,8 @@ function renderTrainee() {
             <div class="course">
               <img class="course-image" src="${course.image}" alt="${course.title}" loading="lazy">
               <b>${index + 1}. ${course.title}</b>
-              <div class="meta">${course.description} · ${course.category}</div>
-              ${course.youtubeUrl ? `<iframe class="video" src="${course.youtubeUrl}" title="${course.title} YouTube lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>` : ''}
+              ${item ? `<div class="meta">${course.description} · ${course.category}</div>
+                ${course.youtubeUrl ? `<iframe class="video" src="${course.youtubeUrl}" title="${course.title} YouTube lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>` : ''}` : '<div class="course-locked"><strong>Course content locked</strong><span>Enroll to open the lessons, video and course content.</span></div>'}
               <div class="row">
                 <span class="pill">${course.language.toUpperCase()}</span>
                 <span class="pill">${course.difficulty}</span>

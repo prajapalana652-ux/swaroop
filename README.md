@@ -5,7 +5,7 @@ A functional glassmorphism learning portal for Trainees, Trainers, and Admins.
 ## Included
 - Separate Trainee, Trainer, and Admin dashboards.
 - Registration and login with email/password.
-- 20 software-focused courses with YouTube lesson embeds.
+- 100 software-focused courses with related YouTube lesson embeds.
 - Trainee enrollment, module progress tracking, real-time problem statements, and printable certificates.
 - Trainer course publishing and assignment workflows.
 - Admin dashboard with user and course activity monitoring.

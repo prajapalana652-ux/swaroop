@@ -131,8 +131,8 @@ app.post('/api/user/profile',async(req,res)=>{
   const profile=await upsertUserProfile({name,email:String(email).toLowerCase(),role,bio,location,phone,website,photo});
   res.json({user:sanitizeUser(profile)});
 });
-app.get('/api/courses',(req,res)=>res.json({count:20,courses:['Full Stack Web Development','Python Programming','Java Programming','React.js','Node.js & Express','SQL & Database Engineering','Git & GitHub','Data Structures & Algorithms','Machine Learning with Python','Generative AI & Prompt Engineering','Cloud Fundamentals','Docker & Containers','Cybersecurity Foundations','TypeScript','Angular','DevOps CI/CD','Software Testing','UI/UX for Developers','System Design','Mobile App Development']}));
-app.get('/api/admin/stats',(req,res)=>res.json({totalUsers:3,trainees:1,trainers:1,admins:1,courses:20,features:['user management','course moderation','analytics','certificates','access control','platform settings']}));
+app.get('/api/courses',(req,res)=>res.json({count:100,courses:['Full Stack Web Development','Python Programming','Java Programming','React.js','Node.js & Express','SQL & Database Engineering','Git & GitHub','Data Structures & Algorithms','Machine Learning with Python','Generative AI & Prompt Engineering','Cloud Fundamentals','Docker & Containers','Cybersecurity Foundations','TypeScript','Angular','DevOps CI/CD','Software Testing','UI/UX for Developers','System Design','Mobile App Development']}));
+app.get('/api/admin/stats',(req,res)=>res.json({totalUsers:3,trainees:1,trainers:1,admins:1,courses:100,features:['user management','course moderation','analytics','certificates','access control','platform settings']}));
 
 const PORT=Number(process.env.PORT || 5000);
 

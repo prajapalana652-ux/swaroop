@@ -7,9 +7,9 @@ const LANGS = {
   en: {
     name: 'English',
     nav: { courses: 'Courses', projects: 'Projects', features: 'Features', login: 'Login' },
-    hero: { eyebrow: 'AI-POWERED SOFTWARE LEARNING PLATFORM', title: 'Learn. Connect.<br><span>Build Your Future.</span>', subtitle: '20 software courses, real-world projects, YouTube lessons, assessments, certificates, trainer analytics, AI assistance and live conference rooms.', createAccount: 'Create account', signIn: 'Sign in' },
+    hero: { eyebrow: 'AI-POWERED SOFTWARE LEARNING PLATFORM', title: 'Learn. Connect.<br><span>Build Your Future.</span>', subtitle: '100 software courses, related YouTube lessons, real-world projects, assessments, certificates, trainer analytics, AI assistance and live conference rooms.', createAccount: 'Create account', signIn: 'Sign in' },
     feature: { ai: 'AI Assistant', aiText: 'Ask questions, get study guidance and project hints without leaving your learning workspace.', live: 'Live Conference', liveText: 'Start a Zoom-like room using Jitsi Meet links for classes, mentoring and team projects.', certificates: 'Project Certificates', certText: 'Finish modules, submit the problem statement project and generate a completion certificate.' },
-    home: { coursesLabel: '20 Software Courses', projectLabel: 'Real-Time Project Tracks' },
+    home: { coursesLabel: '100 Software Courses', projectLabel: 'Real-Time Project Tracks' },
     project: { fintech: 'Build authentication, REST APIs, analytics and role-based access.', aiSupport: 'Build a support chatbot, prompt workflows and evaluation dashboard.', ecommerce: 'Build catalog, cart, payments mock, admin controls and deployment pipeline.' },
     footer: { text: '© 2026 CAPACITY CONNECT · Learning platform demo' },
     auth: { welcome: 'Welcome back', fullName: 'Full name', email: 'Email', password: 'Password', trainee: 'Trainee / Student', trainer: 'Trainer', admin: 'Admin', createAccount: 'Create account', demoNote: 'Demo users are listed on the login screen.' },
@@ -43,6 +43,11 @@ const LANGS = {
   mr: { name: 'मराठी', nav: { courses: 'कोर्स', projects: 'प्रकल्प', features: 'विशेषता', login: 'लॉगिन' }, hero: { eyebrow: 'AI-चालित सॉफ्टवेअरसह शिकण्याची प्लॅटफॉर्म', title: 'शिका. जोडले जा.<br><span>तुमचा भविष्य तयार करा.</span>', subtitle: '20 सॉफ्टवेअर कोर्स, वास्तविक प्रकल्प, YouTube शिकवणी, मूल्यमापन, प्रमाणपत्र, ट्रेनर विश्लेषण, AI मदत आणि लाइव्ह कॉन्फरन्स.', createAccount: 'खाते तयार करा', signIn: 'साइन इन' }, feature: { ai: 'AI सहाय्यक', aiText: 'प्रश्न विचारा, शिकण्याची मार्गदर्शकता आणि प्रकल्प सूचना मिळवा.', live: 'लाइव्ह कॉन्फरन्स', liveText: 'क्लास, मेंटरिंग आणि टीम प्रकल्पासाठी Jitsi Meet रूम सुरू करा.', certificates: 'प्रकल्प प्रमाणपत्रे', certText: 'मॉड्यूल पूर्ण करा, प्रकल्प सबमिट करा आणि प्रमाणपत्र मिळवा.' }, home: { coursesLabel: '20 सॉफ्टवेअर कोर्स', projectLabel: 'रिअल-टाइम प्रकल्प ट्रॅक' }, project: { fintech: 'ऑथेंटिकेशन, REST API, विश्लेषण आणि role-based अ‍ॅक्सेस बनवा.', aiSupport: 'सपोर्ट चॅटबॉट, प्रॉम्प्ट वर्कफ्लो आणि डॅशबोर्ड बनवा.', ecommerce: 'कॅटलॉग, कार्ट, पेमेंट, अ‍ॅडमिन कंट्रोल आणि डिप्लॉयमेंट पाइपलाइन तयार करा.' }, footer: { text: '© 2026 CAPACITY CONNECT · लर्निंग प्लॅटफॉर्म डेमो' }, auth: { welcome: 'स्वागत', fullName: 'पूर्ण नाव', email: 'ईमेल', password: 'पासवर्ड', trainee: 'ट्रेनी / विद्यार्थी', trainer: 'ट्रेनर', admin: 'अ‍ॅडमिन', createAccount: 'खाते तयार करा', demoNote: 'डीमो वापरकर्ते लॉगिन पेजवर दिसतील.' }, ui: { enrolled: 'नोंदणी', modulesDone: 'मॉड्यूल पूर्ण', projects: 'प्रकल्प', certificates: 'प्रमाणपत्रे', courseCatalog: 'कोर्स कॅटलॉग', announcements: 'जाहिरात', aiAssistant: 'AI शिकण्यासहायक', speakingAssistant: 'AI बोलीतळ सहायक', liveConference: 'लाइव्ह कॉन्फरन्स', publishCourse: 'कोर्स प्रकाशित करा', publishedCourses: 'प्रकाशित कोर्स', addAnnouncement: 'जाहिरात जोडा', publish: 'प्रकाशित करा', continueLearning: 'शिकणे सुरू ठेवा', certificate: 'प्रमाणपत्र' } },
   bn: { name: 'বাংলা', nav: { courses: 'কোর্স', projects: 'প্রোজেক্ট', features: 'ফিচার', login: 'লগইন' }, hero: { eyebrow: 'AI-চালিত সফটওয়্যার লার্নিং প্ল্যাটফর্ম', title: 'শিখুন. যুক্ত হোন.<br><span>আপনার ভবিষ্যৎ গড়ুন.</span>', subtitle: '20টি সফটওয়্যার কোর্স, রিয়েল-ওয়ার্ল্ড প্রোজেক্ট, YouTube লেসন, মূল্যায়ন, সার্টিফিকেট, ট্রেনার অ্যানালিটিক্স, AI সহায়তা এবং লাইভ কনফারেন্স।', createAccount: 'অ্যাকাউন্ট তৈরি করুন', signIn: 'সাইন ইন' }, feature: { ai: 'AI সহকারী', aiText: 'প্রশ্ন জিজ্ঞাসা করুন, স্টাডি গাইডেন্স ও প্রোজেক্ট পরামর্শ পান।', live: 'লাইভ কনফারেন্স', liveText: 'ক্লাস, মেন্টরিং এবং টিম প্রোজেক্টের জন্য Jitsi Meet রুম চালু করুন।', certificates: 'প্রোজেক্ট সার্টিফিকেট', certText: 'মডিউল শেষ করুন, প্রোজেক্ট জমা দিন এবং সার্টিফিকেট পান।' }, home: { coursesLabel: '20টি সফটওয়্যার কোর্স', projectLabel: 'রিয়েল-টাইম প্রোজেক্ট ট্র্যাক' }, project: { fintech: 'অথেন্টিকেশন, REST API, অ্যানালিটিকস এবং role-based access তৈরি করুন।', aiSupport: 'সাপোর্ট চ্যাটবট, প্রম্পট ওয়ার্কফ্লো এবং ড্যাশবোর্ড তৈরি করুন।', ecommerce: 'ক্যাটালগ, কার্ট, পেমেন্ট, অ্যাডমিন কন্ট্রোল ও ডিপ্লয়মেন্ট পাইপলাইন তৈরি করুন।' }, footer: { text: '© 2026 CAPACITY CONNECT · লার্নিং প্ল্যাটফর্ম ডেমো' }, auth: { welcome: 'স্বাগতম', fullName: 'পূর্ণ নাম', email: 'ইমেইল', password: 'পাসওয়ার্ড', trainee: 'ট্রেইনি / ছাত্র', trainer: 'ট্রেনার', admin: 'অ্যাডমিন', createAccount: 'অ্যাকাউন্ট তৈরি করুন', demoNote: 'ডেমো ব্যবহারকারীরা লগইন পেজে তালিকাভুক্ত।' }, ui: { enrolled: 'নথিভুক্ত', modulesDone: 'মডিউল শেষ', projects: 'প্রোজেক্ট', certificates: 'সার্টিফিকেট', courseCatalog: 'কোর্স ক্যাটালগ', announcements: 'ঘোষণা', aiAssistant: 'AI শেখার সহকারী', speakingAssistant: 'AI কথোপকথন সহকারী', liveConference: 'লাইভ কনফারেন্স', publishCourse: 'কোর্স প্রকাশ করুন', publishedCourses: 'প্রকাশিত কোর্স', addAnnouncement: 'ঘোষণা যোগ করুন', publish: 'প্রকাশ করুন', continueLearning: 'শেখা চালিয়ে যান', certificate: 'সার্টিফিকেট' } }
 };
+
+Object.values(LANGS).forEach((language) => {
+  if (language.hero?.subtitle) language.hero.subtitle = language.hero.subtitle.replace(/\b20\b/g, '100');
+  if (language.home?.coursesLabel) language.home.coursesLabel = language.home.coursesLabel.replace(/\b20\b/g, '100');
+});
 
 function getCurrentLanguage() { return localStorage.getItem('cc_language') || 'en'; }
 function setCurrentLanguage(lang) {
@@ -84,12 +89,31 @@ function applyTranslations() {
 }
 
 const defaultSettings = { ai: true, live: true, certificates: true, notifications: true, reminders: true };
-const defaultCourseList = [
-  { id: 1, title: 'Full Stack Web Development', category: 'Web', difficulty: 'Intermediate', duration: '6 Weeks', language: 'en', image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80', description: 'Build full-stack apps with HTML, CSS, JavaScript, Node.js and REST APIs.' },
-  { id: 2, title: 'Python Programming', category: 'Python', difficulty: 'Beginner', duration: '4 Weeks', language: 'en', image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80', description: 'Learn Python fundamentals, OOP, files and API workflows.' },
-  { id: 3, title: 'React.js', category: 'Frontend', difficulty: 'Intermediate', duration: '5 Weeks', language: 'en', image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80', description: 'Create interactive UI with React components, hooks and routing.' },
-  { id: 4, title: 'SQL & Database Engineering', category: 'Database', difficulty: 'Intermediate', duration: '4 Weeks', language: 'en', image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=900&q=80', description: 'Design database schemas, queries, indexes and reporting structures.' }
+const courseTracks = [
+  ['Web Development', 'Web', ['HTML & CSS Foundations', 'JavaScript Essentials', 'Responsive Web Design', 'Accessibility for Web Apps', 'REST API Development', 'Node.js Backend Development', 'Express.js Applications', 'Full Stack Project Lab', 'Web Performance Optimization', 'Web Security Foundations'], 'UB1O30fR-EE'],
+  ['Python', 'Python', ['Python Programming', 'Object-Oriented Python', 'Python Data Structures', 'Python Automation', 'Python File Handling', 'Python APIs with FastAPI', 'Django Web Development', 'Python Testing with Pytest', 'Python for Data Analysis', 'Python Project Lab'], 'rfscVS0vtbw'],
+  ['Frontend', 'Frontend', ['React.js Fundamentals', 'React Hooks and State', 'React Router Applications', 'Next.js Foundations', 'TypeScript for Frontend', 'Vue.js Essentials', 'Angular Application Development', 'Frontend Testing', 'Design Systems with CSS', 'Frontend Project Lab'], 'SqcY0GlETPk'],
+  ['Database', 'Database', ['SQL & Database Engineering', 'PostgreSQL Essentials', 'MySQL for Developers', 'MongoDB Fundamentals', 'Database Design', 'Query Optimization', 'Database Administration', 'Redis Caching', 'Data Modeling', 'Database Project Lab'], 'HXV3zeQKqGY'],
+  ['DevOps', 'DevOps', ['Git and GitHub', 'Linux for Developers', 'Docker Essentials', 'Kubernetes Foundations', 'CI/CD Pipelines', 'Infrastructure as Code', 'Nginx and Web Servers', 'DevOps Monitoring', 'Cloud Deployment', 'DevOps Project Lab'], 'RGOj5yH7evk'],
+  ['Backend', 'Backend', ['Node.js Fundamentals', 'Express API Design', 'Java Spring Boot', 'C# .NET Web APIs', 'Go Programming', 'GraphQL APIs', 'Microservices Architecture', 'Authentication Systems', 'Message Queues', 'Backend Project Lab'], 'TlB_eWDSMt4'],
+  ['Data and AI', 'Data', ['Data Analysis with Pandas', 'Data Visualization', 'Statistics for Developers', 'Machine Learning Foundations', 'Deep Learning Essentials', 'Natural Language Processing', 'Computer Vision', 'Generative AI Applications', 'Prompt Engineering', 'AI Project Lab'], 'aircAruvnKk'],
+  ['Cloud', 'Cloud', ['AWS Cloud Foundations', 'Azure Fundamentals', 'Google Cloud Essentials', 'Serverless Applications', 'Cloud Storage and Databases', 'Cloud Networking', 'Cloud Security', 'Terraform on Cloud', 'Cloud Cost Management', 'Cloud Project Lab'], 'ulprqHHWlng'],
+  ['Mobile', 'Mobile', ['Android Development', 'Kotlin Programming', 'iOS Development', 'Swift Programming', 'Flutter Applications', 'React Native', 'Mobile UI Design', 'Mobile App APIs', 'Mobile App Testing', 'Mobile Project Lab'], 'F3J3PZ3mLqI'],
+  ['Engineering', 'Engineering', ['Data Structures and Algorithms', 'Object-Oriented Design', 'System Design', 'Software Testing', 'Clean Code Practices', 'Secure Coding', 'Agile Software Development', 'Technical Interview Prep', 'Open Source Contribution', 'Software Engineering Project Lab'], '8hly31xKli0']
 ];
+
+const defaultCourseList = courseTracks.flatMap(([track, category, titles, videoId], trackIndex) => titles.map((title, index) => ({
+  id: trackIndex * 10 + index + 1,
+  title,
+  category,
+  difficulty: index < 3 ? 'Beginner' : index < 7 ? 'Intermediate' : 'Advanced',
+  duration: `${index < 3 ? 4 : 6} Weeks`,
+  language: 'en',
+  image: `https://images.unsplash.com/${['photo-1498050108023-c5249f4df085', 'photo-1526379095098-d400fd0bf935', 'photo-1555066931-4365d14bab8c', 'photo-1544383835-bda2bc66a55d'][trackIndex % 4]}?auto=format&fit=crop&w=900&q=80`,
+  description: `Learn ${title.toLowerCase()} through guided lessons, practical exercises and a real-world project.`,
+  youtubeUrl: `https://www.youtube.com/embed/${videoId}`,
+  track
+})));
 const defaultAssignments = [
   { id: 1, courseId: 1, title: 'Landing page build challenge', due: '2026-10-05', description: 'Design and build a responsive landing page with hero section, pricing tiles and CTA buttons.', status: 'pending' },
   { id: 2, courseId: 2, title: 'Python mini project', due: '2026-10-12', description: 'Create a small Python app that reads a CSV file and reports summary statistics.', status: 'pending' },
@@ -155,12 +179,26 @@ function saveAnnouncements(items) { localStorage.setItem('cc_announcements', JSO
 function trainerCourses() { return JSON.parse(localStorage.getItem('cc_trainer_courses') || '[]'); }
 function saveTrainerCourses(items) { localStorage.setItem('cc_trainer_courses', JSON.stringify(items)); }
 
+function learnerStats(email) {
+  const enrolled = Object.values(progress()[email] || {});
+  const completedModules = enrolled.reduce((total, course) => total + Math.min(5, Number(course.modules) || 0), 0);
+  const projects = enrolled.filter((course) => course.project).length;
+  const certificates = enrolled.filter((course) => course.certificate).length;
+  const level = completedModules >= 15 || certificates >= 2 ? 'Advanced' : completedModules >= 5 || projects >= 1 ? 'Intermediate' : 'Beginner';
+  const possibleModules = enrolled.length * 5;
+  const completion = possibleModules ? Math.round((completedModules / possibleModules) * 100) : 0;
+  return { enrolled: enrolled.length, completedModules, projects, certificates, completion, level };
+}
+
 function seed() {
   if (!localStorage.getItem('cc_progress')) localStorage.setItem('cc_progress', JSON.stringify({}));
   if (!localStorage.getItem('cc_trainer_courses')) localStorage.setItem('cc_trainer_courses', JSON.stringify([]));
   if (!localStorage.getItem('cc_settings')) localStorage.setItem('cc_settings', JSON.stringify({}));
   if (!localStorage.getItem('cc_announcements')) localStorage.setItem('cc_announcements', JSON.stringify([]));
-  if (!localStorage.getItem('cc_courses')) localStorage.setItem('cc_courses', JSON.stringify(defaultCourseList));
+  const savedCourses = JSON.parse(localStorage.getItem('cc_courses') || '[]');
+  if (savedCourses.length !== defaultCourseList.length || savedCourses.some((course) => !course.youtubeUrl)) {
+    localStorage.setItem('cc_courses', JSON.stringify(defaultCourseList));
+  }
 }
 
 function ensureDemoAccounts() {
@@ -625,18 +663,66 @@ function generateCertificate(courseId) {
   const u = current();
   const course = getCourses().find((item) => item.id === courseId);
   const certWindow = window.open('', '_blank');
+  if (!u || !course) return;
+  if (!certWindow) {
+    toast('Certificate window was blocked. Allow pop-ups and try again.');
+    return;
+  }
   certWindow.document.write(`
-    <html><body style="font-family:Arial; text-align:center; padding:80px; background:#f7f8ff; color:#10162d;">
-      <h1>CAPACITY CONNECT</h1>
-      <h2>Certificate of Completion</h2>
-      <p>This certifies that</p>
-      <h3>${u.name}</h3>
-      <p>successfully completed the course</p>
-      <h2>${course.title}</h2>
-      <p>Issued on ${new Date().toLocaleDateString()}</p>
-      <hr>
-      <p>Trainer: Platform Mentor</p>
-    </body></html>
+    <html>
+      <head>
+        <title>Certificate - ${escapeHtml(course.title)}</title>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;600;700;800&display=swap');
+          :root { --ink: #eef4ff; --muted: #a9b9d8; --blue: #8ec5ff; --violet: #c69cff; }
+          * { box-sizing: border-box; }
+          body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 32px; color: var(--ink); font-family: Manrope, Arial, sans-serif; background: #090d1d; overflow: auto; }
+          body:before, body:after { content: ''; position: fixed; width: 380px; height: 380px; border-radius: 50%; filter: blur(80px); opacity: .38; pointer-events: none; }
+          body:before { background: #3878d8; top: -160px; left: -110px; }
+          body:after { background: #9c4cc5; right: -130px; bottom: -170px; }
+          .certificate { position: relative; width: min(960px, 100%); padding: 10px; border: 1px solid rgba(255,255,255,.28); border-radius: 28px; background: linear-gradient(135deg, rgba(255,255,255,.25), rgba(255,255,255,.04)); box-shadow: 0 30px 90px rgba(0,0,0,.5); }
+          .inner { position: relative; min-height: 600px; padding: 68px 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; background: rgba(14, 23, 48, .68); backdrop-filter: blur(24px); overflow: hidden; }
+          .inner:before { content: 'CAPACITY CONNECT'; position: absolute; inset: 0; display: grid; place-items: center; color: rgba(255,255,255,.025); font-size: 70px; font-weight: 800; letter-spacing: 8px; transform: rotate(-28deg); }
+          .content { position: relative; z-index: 1; }
+          .brand { color: var(--blue); font-size: 13px; font-weight: 800; letter-spacing: 4px; }
+          .eyebrow { margin: 42px 0 14px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+          h1 { margin: 0; font: 400 clamp(40px, 7vw, 72px)/1.05 'DM Serif Display', Georgia, serif; }
+          .rule { width: 90px; height: 2px; margin: 24px auto; background: linear-gradient(90deg, var(--blue), var(--violet)); }
+          .recipient { margin: 10px 0 18px; font-size: clamp(25px, 4vw, 38px); font-weight: 800; }
+          .copy { margin: 0; color: var(--muted); font-size: 15px; }
+          .course { margin: 16px 0 35px; color: white; font-size: clamp(24px, 4vw, 40px); font-weight: 700; }
+          .seal { display: grid; place-items: center; width: 78px; height: 78px; margin: 0 auto 26px; border: 1px solid rgba(255,255,255,.48); border-radius: 50%; color: var(--blue); font-size: 28px; box-shadow: 0 0 0 8px rgba(142,197,255,.08), inset 0 0 24px rgba(142,197,255,.16); }
+          .details { display: flex; gap: 56px; justify-content: center; color: var(--muted); font-size: 12px; }
+          .details strong { display: block; margin-top: 6px; color: var(--ink); font-size: 14px; }
+          .actions { position: relative; z-index: 2; margin-top: 22px; text-align: center; }
+          button { border: 1px solid rgba(255,255,255,.2); border-radius: 10px; padding: 11px 18px; color: white; background: rgba(255,255,255,.1); cursor: pointer; font: inherit; }
+          button:hover { background: rgba(255,255,255,.18); }
+          @media (max-width: 620px) { body { padding: 14px; } .inner { min-height: 540px; padding: 48px 22px; } .details { gap: 18px; } }
+          @media print { body { padding: 0; background: white; } body:before, body:after, .actions { display: none; } .certificate { width: 100%; border: 0; box-shadow: none; } .inner { min-height: 100vh; border-radius: 0; } }
+        </style>
+      </head>
+      <body>
+        <main class="certificate">
+          <section class="inner">
+            <div class="content">
+              <div class="brand">CAPACITY CONNECT</div>
+              <div class="eyebrow">Certificate of completion</div>
+              <div class="seal">&#10003;</div>
+              <p class="copy">This certificate is proudly presented to</p>
+              <div class="recipient">${escapeHtml(u.name)}</div>
+              <div class="rule"></div>
+              <p class="copy">for successfully completing</p>
+              <div class="course">${escapeHtml(course.title)}</div>
+              <div class="details">
+                <div>ISSUED ON<strong>${new Date().toLocaleDateString()}</strong></div>
+                <div>TRAINER<strong>Platform Mentor</strong></div>
+              </div>
+            </div>
+          </section>
+          <div class="actions"><button onclick="window.print()">Print certificate</button></div>
+        </main>
+      </body>
+    </html>
   `);
   certWindow.document.close();
   certWindow.focus();
@@ -740,6 +826,7 @@ function renderTrainee() {
               <img class="course-image" src="${course.image}" alt="${course.title}" loading="lazy">
               <b>${index + 1}. ${course.title}</b>
               <div class="meta">${course.description} · ${course.category}</div>
+              ${course.youtubeUrl ? `<iframe class="video" src="${course.youtubeUrl}" title="${course.title} YouTube lesson" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>` : ''}
               <div class="row">
                 <span class="pill">${course.language.toUpperCase()}</span>
                 <span class="pill">${course.difficulty}</span>
@@ -748,7 +835,7 @@ function renderTrainee() {
               <div class="row">
                 ${item ? `<span class="pill">${pct}% complete</span>` : `<button class="btn small" onclick="enrollCourse(${course.id})">Enroll</button>`}
                 ${item ? `<button class="btn small" onclick="completeModule(${course.id})">${item.modules >= 5 ? 'Module complete' : 'Module complete'}</button>` : ''}
-                ${item && item.project ? `<button class="btn small" onclick="generateCertificate(${course.id})">Certificate</button>` : ''}
+                ${item && item.certificate ? `<button class="btn small" onclick="generateCertificate(${course.id})">Certificate</button>` : ''}
               </div>
             </div>
           `;
@@ -1035,16 +1122,21 @@ function renderAdmin() {
     </section>
 
     <section class="glass section">
-      <h3>Recent user activity</h3>
+      <h3>User learning levels</h3>
       <table class="table">
-        <tr><th>User</th><th>Role</th><th>Enrollments</th><th>Certificate</th></tr>
+        <tr><th>User</th><th>Role</th><th>Level</th><th>Progress</th><th>Enrollments</th><th>Certificate</th></tr>
         ${usersList.map((user) => `
-          <tr>
-            <td>${user.name}</td>
+          ${(() => {
+            const stats = learnerStats(user.email);
+            return `<tr>
+            <td>${user.name}<br><span class="muted">${user.email}</span></td>
             <td>${user.role}</td>
-            <td>${Object.keys(p[user.email] || {}).length}</td>
-            <td>${Object.values(p[user.email] || {}).some((meta) => meta.certificate) ? 'Yes' : 'No'}</td>
-          </tr>
+            <td><span class="pill">${stats.level}</span></td>
+            <td>${stats.completion}% <span class="muted">(${stats.completedModules} modules)</span></td>
+            <td>${stats.enrolled}</td>
+            <td>${stats.certificates ? `Yes (${stats.certificates})` : 'No'}</td>
+          </tr>`;
+          })()}
         `).join('')}
       </table>
     </section>

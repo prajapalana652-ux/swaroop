@@ -167,6 +167,7 @@ textarea.field { min-height: 120px; resize: vertical; }
 .choice-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 10px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); }
 .ai-controls { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 footer { text-align: center; color: #dbe5ff; opacity: .7; padding: 24px 16px 40px; }
+.project-attribution { display: inline-block; margin-top: 8px; color: #9fc9ff; font-size: 12px; letter-spacing: .2px; }
 
 @media (max-width: 860px) {
   .grid, .statgrid, .section-grid { grid-template-columns: 1fr 1fr; }

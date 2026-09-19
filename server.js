@@ -31,7 +31,12 @@ async function upsertUserProfile(user){
   const {data,error}=await supabase.from('profiles').upsert({
     email:user.email,
     name:user.name,
-    role:user.role
+    role:user.role,
+    bio:user.bio || '',
+    location:user.location || '',
+    phone:user.phone || '',
+    website:user.website || '',
+    photo:user.photo || ''
   },{onConflict:'email'}).select().single();
   if(error)throw new Error(error.message);
   return data;
@@ -94,9 +99,9 @@ app.post('/api/user/settings',async (req,res)=>{
 
 app.get('/api/auth/config',(req,res)=>res.json({url:supabaseUrl,key:process.env.SUPABASE_ANON_KEY || ''}));
 app.post('/api/user/profile',async(req,res)=>{
-  const {name,email,role='trainee'}=req.body;
+  const {name,email,role='trainee',bio,location,phone,website,photo}=req.body;
   if(!name||!email)return res.status(400).json({message:'Name and email are required'});
-  const profile=await upsertUserProfile({name,email:String(email).toLowerCase(),role});
+  const profile=await upsertUserProfile({name,email:String(email).toLowerCase(),role,bio,location,phone,website,photo});
   res.json({user:sanitizeUser(profile)});
 });
 app.get('/api/courses',(req,res)=>res.json({count:20,courses:['Full Stack Web Development','Python Programming','Java Programming','React.js','Node.js & Express','SQL & Database Engineering','Git & GitHub','Data Structures & Algorithms','Machine Learning with Python','Generative AI & Prompt Engineering','Cloud Fundamentals','Docker & Containers','Cybersecurity Foundations','TypeScript','Angular','DevOps CI/CD','Software Testing','UI/UX for Developers','System Design','Mobile App Development']}));

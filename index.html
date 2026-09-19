@@ -1,10 +1,107 @@
-<!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CAPACITY CONNECT</title><link rel="stylesheet" href="css/style.css"></head>
-<body><div class="orb orb1"></div><div class="orb orb2"></div>
-<nav class="nav glass"><div class="logo">CAPACITY<span>CONNECT</span></div><div class="navlinks"><a href="#courses">Courses</a><a href="#projects">Projects</a><a href="#features">Features</a><button id="loginNav" class="btn small">Login</button></div></nav>
-<main id="app"><section class="hero"><div class="glass hero-card"><p class="eyebrow">AI-POWERED SOFTWARE LEARNING PLATFORM</p><h1>Learn. Connect.<br><span>Build Your Future.</span></h1><p>20 software courses, real-world projects, YouTube lessons, assessments, certificates, trainer analytics, AI assistance and live conference rooms.</p><div><button class="btn" onclick="showAuth('register')">Create account</button><button class="btn ghost" onclick="showAuth('login')">Sign in</button></div></div></section>
-<section id="features" class="grid"><article class="glass card"><b>🤖 AI Assistant</b><p>Ask questions, get study guidance and project hints without leaving your learning workspace.</p></article><article class="glass card"><b>🎥 Live Conference</b><p>Start a Zoom-like room using Jitsi Meet links for classes, mentoring and team projects.</p></article><article class="glass card"><b>🏆 Project Certificates</b><p>Finish modules, submit the problem statement project and generate a completion certificate.</p></article></section>
-<section id="courses"><h2>20 Software Courses</h2><div id="coursePreview" class="grid"></div></section>
-<section id="projects"><h2>Real-Time Project Tracks</h2><div class="grid"><article class="glass card"><b>FinTech Dashboard</b><p>Build authentication, REST APIs, analytics and role-based access.</p></article><article class="glass card"><b>AI Support Assistant</b><p>Build a support chatbot, prompt workflows and evaluation dashboard.</p></article><article class="glass card"><b>E-Commerce Platform</b><p>Build catalog, cart, payments mock, admin controls and deployment pipeline.</p></article></div></section></main><footer>© 2026 CAPACITY CONNECT · Learning platform demo</footer>
-<div id="authModal" class="modal hidden"><div class="glass auth"><button class="close" onclick="hideAuth()">×</button><div class="logo">CAPACITY<span>CONNECT</span></div><h2 id="authTitle">Welcome back</h2><form id="authForm"><input id="name" placeholder="Full name" required><input id="email" type="email" placeholder="Email" required><input id="password" type="password" placeholder="Password" minlength="6" required><select id="role"><option value="trainee">Trainee / Student</option><option value="trainer">Trainer</option><option value="admin">Admin</option></select><button class="btn" id="authSubmit">Create account</button></form><p id="authSwitch" class="muted"></p><div class="divider">OR</div><button class="google" onclick="alert('Google sign-in is ready for OAuth credentials in backend/.env. Demo login uses email/password.')">🔵 Continue with Google</button><p class="muted">Demo users are listed on the login screen.</p></div></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="js/app.js?v=9c432ab"></script></body></html>
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPACITY CONNECT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <nav class="nav glass">
+    <div class="logo">CAPACITY<span>CONNECT</span></div>
+    <div class="navlinks">
+      <a href="#courses" data-i18n="nav.courses">Courses</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <label class="lang-switch">
+        <span>🌐</span>
+        <select id="langSelector" aria-label="Language selector">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ta">தமிழ்</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ml">മലയാളം</option>
+          <option value="mr">मराठी</option>
+          <option value="bn">বাংলা</option>
+        </select>
+      </label>
+      <button id="loginNav" class="btn small" data-i18n="nav.login">Login</button>
+    </div>
+  </nav>
+
+  <main id="app">
+    <section class="hero">
+      <div class="glass hero-card">
+        <p class="eyebrow" data-i18n="hero.eyebrow">AI-POWERED SOFTWARE LEARNING PLATFORM</p>
+        <h1 data-i18n="hero.title">Learn. Connect.<br><span>Build Your Future.</span></h1>
+        <p data-i18n="hero.subtitle">20 software courses, real-world projects, YouTube lessons, assessments, certificates, trainer analytics, AI assistance and live conference rooms.</p>
+        <div>
+          <button class="btn" onclick="showAuth('register')" data-i18n="hero.createAccount">Create account</button>
+          <button class="btn ghost" onclick="showAuth('login')" data-i18n="hero.signIn">Sign in</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="grid">
+      <article class="glass card">
+        <b>🤖 <span data-i18n="feature.ai">AI Assistant</span></b>
+        <p data-i18n="feature.aiText">Ask questions, get study guidance and project hints without leaving your learning workspace.</p>
+      </article>
+      <article class="glass card">
+        <b>🎥 <span data-i18n="feature.live">Live Conference</span></b>
+        <p data-i18n="feature.liveText">Start a Zoom-like room using Jitsi Meet links for classes, mentoring and team projects.</p>
+      </article>
+      <article class="glass card">
+        <b>🏆 <span data-i18n="feature.certificates">Project Certificates</span></b>
+        <p data-i18n="feature.certText">Finish modules, submit the problem statement project and generate a completion certificate.</p>
+      </article>
+    </section>
+
+    <section id="courses">
+      <h2 data-i18n="home.coursesLabel">20 Software Courses</h2>
+      <div id="coursePreview" class="grid"></div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="home.projectLabel">Real-Time Project Tracks</h2>
+      <div class="grid">
+        <article class="glass card"><b>FinTech Dashboard</b><p data-i18n="project.fintech">Build authentication, REST APIs, analytics and role-based access.</p></article>
+        <article class="glass card"><b>AI Support Assistant</b><p data-i18n="project.aiSupport">Build a support chatbot, prompt workflows and evaluation dashboard.</p></article>
+        <article class="glass card"><b>E-Commerce Platform</b><p data-i18n="project.ecommerce">Build catalog, cart, payments mock, admin controls and deployment pipeline.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="footer.text">© 2026 CAPACITY CONNECT · Learning platform demo</footer>
+
+  <div id="authModal" class="modal hidden">
+    <div class="glass auth">
+      <button class="close" onclick="hideAuth()">×</button>
+      <div class="logo">CAPACITY<span>CONNECT</span></div>
+      <h2 id="authTitle" data-i18n="auth.welcome">Welcome back</h2>
+      <form id="authForm">
+        <input id="name" placeholder="Full name" data-i18n-placeholder="auth.fullName" required>
+        <input id="email" type="email" placeholder="Email" data-i18n-placeholder="auth.email" required>
+        <input id="password" type="password" placeholder="Password" minlength="6" data-i18n-placeholder="auth.password" required>
+        <select id="role">
+          <option value="trainee" data-i18n="auth.trainee">Trainee / Student</option>
+          <option value="trainer" data-i18n="auth.trainer">Trainer</option>
+          <option value="admin" data-i18n="auth.admin">Admin</option>
+        </select>
+        <button class="btn" id="authSubmit" data-i18n="auth.createAccount">Create account</button>
+      </form>
+      <p id="authSwitch" class="muted"></p>
+      <div class="divider">OR</div>
+      <button class="google" onclick="alert('Google sign-in is ready for OAuth credentials in backend/.env. Demo login uses email/password.')">🔵 Continue with Google</button>
+      <p class="muted" data-i18n="auth.demoNote">Demo users are listed on the login screen.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js?v=20260919-2"></script>
+</body>
+</html>

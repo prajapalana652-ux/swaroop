@@ -1,1 +1,74 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard - CAPACITY CONNECT</title><link rel="stylesheet" href="css/style.css"></head><body><div class="orb orb1"></div><div class="orb orb2"></div><nav class="nav glass"><div class="logo">CAPACITY<span>CONNECT</span></div><div class="navlinks"><span id="roleBadge"></span><button class="linkbtn" onclick="openProfile()">Profile</button><button class="linkbtn" onclick="openSettings()">Settings</button><button class="linkbtn" onclick="logout()">Log out</button></div></nav><main class="dashboard"><div id="dash"></div></main><div id="toast" class="toast"></div><div id="profileModal" class="modal hidden"><div class="glass auth wide profile-panel"><button class="close" onclick="closeProfile()">×</button><h2>Edit profile</h2><form id="profileForm" onsubmit="saveProfile(event)"><div class="profile-photo-row"><img id="profilePreview" class="profile-avatar" alt="Profile photo"><label class="btn small upload-button">Choose photo<input id="profilePhoto" type="file" accept="image/*" onchange="previewProfilePhoto(event)"></label></div><label>Full name<input id="profileName" class="field" required></label><label>Email<input id="profileEmail" class="field" type="email" readonly></label><label>Bio<textarea id="profileBio" class="field" rows="3" placeholder="Tell your classmates about yourself"></textarea></label><div class="profile-fields"><label>Location<input id="profileLocation" class="field" placeholder="City, Country"></label><label>Phone<input id="profilePhone" class="field" type="tel" placeholder="Phone number"></label></div><label>Website<input id="profileWebsite" class="field" type="url" placeholder="https://example.com"></label><button class="btn" type="submit">Save profile</button></form></div></div><div id="settingsModal" class="modal hidden"><div class="glass auth wide settings-panel"><button class="close" onclick="closeSettings()">×</button><h2>Settings</h2><div id="settingsContent"></div></div></div><script src="js/app.js?v=9c432ab"></script></body></html>
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - CAPACITY CONNECT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <nav class="nav glass">
+    <div class="logo">CAPACITY<span>CONNECT</span></div>
+    <div class="navlinks">
+      <span id="roleBadge"></span>
+      <label class="lang-switch compact">
+        <span>🌐</span>
+        <select id="dashboardLang" aria-label="Dashboard language">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ta">தமிழ்</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ml">മലയാളം</option>
+          <option value="mr">मराठी</option>
+          <option value="bn">বাংলা</option>
+        </select>
+      </label>
+      <button class="linkbtn" onclick="openProfile()">Profile</button>
+      <button class="linkbtn" onclick="openSettings()">Settings</button>
+      <button class="linkbtn" onclick="logout()">Log out</button>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <div id="dash"></div>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <div id="profileModal" class="modal hidden">
+    <div class="glass auth wide profile-panel">
+      <button class="close" onclick="closeProfile()">×</button>
+      <h2>Edit profile</h2>
+      <form id="profileForm" onsubmit="saveProfile(event)">
+        <div class="profile-photo-row">
+          <img id="profilePreview" class="profile-avatar" alt="Profile photo">
+          <label class="btn small upload-button">Choose photo<input id="profilePhoto" type="file" accept="image/*" onchange="previewProfilePhoto(event)"></label>
+        </div>
+        <label>Full name<input id="profileName" class="field" required></label>
+        <label>Email<input id="profileEmail" class="field" type="email" readonly></label>
+        <label>Bio<textarea id="profileBio" class="field" rows="3" placeholder="Tell your classmates about yourself"></textarea></label>
+        <div class="profile-fields">
+          <label>Location<input id="profileLocation" class="field" placeholder="City, Country"></label>
+          <label>Phone<input id="profilePhone" class="field" type="tel" placeholder="Phone number"></label>
+        </div>
+        <label>Website<input id="profileWebsite" class="field" type="url" placeholder="https://example.com"></label>
+        <button class="btn" type="submit">Save profile</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="settingsModal" class="modal hidden">
+    <div class="glass auth wide settings-panel">
+      <button class="close" onclick="closeSettings()">×</button>
+      <h2>Preferences</h2>
+      <div id="settingsContent"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js?v=20260919-2"></script>
+</body>
+</html>
